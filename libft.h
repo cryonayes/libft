@@ -6,7 +6,7 @@
 /*   By: aeser <aeser@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 16:57:19 by aeser             #+#    #+#             */
-/*   Updated: 2022/01/08 23:58:10 by aeser            ###   ########.fr       */
+/*   Updated: 2022/01/09 00:34:47 by aeser            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <string.h>
+# include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
 
@@ -42,7 +43,6 @@ char	*ft_strdup(const char *s);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
-char	*ft_strtrim(char const *s1, char const *set);
 
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcat(char *dest, char *src, size_t size);
@@ -50,5 +50,6 @@ size_t	ft_strlcpy(char *dest, char *src, size_t size);
 
 //part2
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-
+char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
 #endif
