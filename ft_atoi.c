@@ -6,7 +6,7 @@
 /*   By: aeser <aeser@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 16:53:34 by aeser             #+#    #+#             */
-/*   Updated: 2022/01/08 16:53:36 by aeser            ###   ########.fr       */
+/*   Updated: 2022/01/08 17:21:42 by aeser            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int	ft_atoi(const char *nptr)
 			polarity *= -1;
 		index++;
 	}
+	ret_val = 0;
 	while (nptr[index] >= '0' && nptr[index] <= '9')
 	{
 		ret_val = (ret_val * 10) + (nptr[index] - '0');
