@@ -10,7 +10,7 @@ $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
 $(OBJ): $(FILES)
-	gcc $(CFLAGS) $(FILES) -o $(@:%.c=%.o)
+	gcc $(CFLAGS) $(FILES)
 
 clean:
 	@rm -f *.o
@@ -18,6 +18,9 @@ clean:
 fclean: clean
 	@rm -f $(NAME)
 
-grademe:
+re: fclean all
+
+grademe: re
+	@../libftest/grademe.sh
 
 .PHONY: all clean fclean grademe
