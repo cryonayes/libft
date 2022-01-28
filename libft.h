@@ -6,7 +6,7 @@
 /*   By: aeser <aeser@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 16:57:19 by aeser             #+#    #+#             */
-/*   Updated: 2022/01/09 00:34:47 by aeser            ###   ########.fr       */
+/*   Updated: 2022/01/28 14:05:42 by aeser            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,4 +52,5 @@ size_t	ft_strlcpy(char *dest, char *src, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
+char	*ft_strjoin(char const *s1, char const *s2);
 #endif
