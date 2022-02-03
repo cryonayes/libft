@@ -6,7 +6,7 @@
 /*   By: aeser <aeser@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 16:53:50 by aeser             #+#    #+#             */
-/*   Updated: 2022/01/08 16:53:52 by aeser            ###   ########.fr       */
+/*   Updated: 2022/02/01 11:12:21 by aeser            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	while (*((unsigned char *)s) && n > 0)
+	while (n-- > 0)
 	{
 		*((unsigned char *)s) = 0;
 		s++;
-		n--;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: aeser <aeser@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 13:51:50 by aeser             #+#    #+#             */
-/*   Updated: 2022/01/31 13:52:40 by aeser            ###   ########.fr       */
+/*   Updated: 2022/02/01 15:48:32 by aeser            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,15 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list	*temp;
+	t_list	*tmp;
 
-	if (new == NULL)
-		return ;
 	if (*lst == NULL)
 	{
 		*lst = new;
 		return ;
 	}
-	temp = *lst;
-	while (temp->next)
-		temp = temp->next;
-	temp->next = new;
-	new->next = NULL;
+	tmp = *lst;
+	while (tmp->next)
+		tmp = tmp->next;
+	tmp->next = new;
 }

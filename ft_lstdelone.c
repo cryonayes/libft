@@ -6,7 +6,7 @@
 /*   By: aeser <aeser@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 14:27:30 by aeser             #+#    #+#             */
-/*   Updated: 2022/01/31 14:42:02 by aeser            ###   ########.fr       */
+/*   Updated: 2022/02/01 15:46:13 by aeser            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (!lst)
-		return ;
-	if (lst->content)
-		del(lst->content);
+	(*del)(lst->content);
+	free(lst);
 }

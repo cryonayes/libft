@@ -6,7 +6,7 @@
 /*   By: aeser <aeser@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 16:55:22 by aeser             #+#    #+#             */
-/*   Updated: 2022/01/08 16:55:23 by aeser            ###   ########.fr       */
+/*   Updated: 2022/02/01 11:15:35 by aeser            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	if (n == 0)
 		return (0);
 	index = 0;
-	while (index < (n - 1) && (*(unsigned char *)s1) && (*(unsigned char *)s2))
+	while (index < (n - 1))
 	{
 		if (((unsigned char *)s1)[index] != ((unsigned char *)s2)[index])
 			break ;

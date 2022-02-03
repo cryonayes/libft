@@ -6,7 +6,7 @@
 /*   By: aeser <aeser@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/30 17:08:14 by aeser             #+#    #+#             */
-/*   Updated: 2022/01/30 17:08:51 by aeser            ###   ########.fr       */
+/*   Updated: 2022/02/03 12:14:09 by aeser            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	size_t	index;
+	unsigned int	index;
 
+	if (s == NULL || f == NULL)
+		return ;
 	index = 0;
 	while (s[index])
 	{
