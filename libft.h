@@ -6,7 +6,7 @@
 /*   By: aeser <aeser@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 16:57:19 by aeser             #+#    #+#             */
-/*   Updated: 2022/01/31 16:49:49 by aeser            ###   ########.fr       */
+/*   Updated: 2022/03/04 12:47:05 by aeser            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,16 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+
+// ft_printf
+int		ft_printf(const char *format, ...);
+int		ft_print_char(const int chr);
+int		ft_print_string(const char *str);
+int		ft_print_hex(unsigned int number, const char format);
+int		ft_print_percent(void);
+int		ft_print_number(int nbr);
+int		ft_print_unsigned(unsigned int nbr);
+int		ft_print_ptr(unsigned long long addr);
 
 //Bonus
 typedef struct s_list
